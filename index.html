@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/imagenes/favicon.png">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title>Construcción Proyecto Final Bs As</title>
+</head>
+<body>
+    <header class="header_flex">
+        <div class="logo">
+            <img class="img_logo" src="./assets/imagenes/codoacodo.png" alt="logo codo a codo" loading="lazy">
+            <h2 class="tituloHeader">Conf Bs As</h2>
+        </div>
+        <nav class="navegador">
+            <a class="link" href="#">La Conferencia</a>
+            <a class="link link_gris" href="./paginas/los_oradores.html">Los oradores</a>
+            <a class="link link_gris" href="./paginas/lugar_y_fecha.html">El lugar y la fecha</a>
+            <a class="link link_gris" href="./paginas/conviertete_en_orador.html">Conviértete en orador</a>
+            <a class="link link_verde" href="./paginas/comprar_tickets.html">Comprar tickets</a>
+        </nav>
+    </header>
+
+    <main> 
+        <section class="sectionEdificio">
+            <div class="contenidoEdificio">
+                <h1>Conf Bs As</h1>
+                <p class="parrafoEdificio">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento
+                    y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento,
+                    a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
+                </p>
+                <div class="alineaBoton">
+                    <a class="botonTransparente" href="./paginas/conviertete_en_orador.html">Quiero ser orador</a>
+                    <a class="botonVerde" href="./paginas/comprar_tickets.html">Comprar tickets</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <section class="sectionTarjetas">
+        <div class="tituloTarjetas">  <!-- clase para version cel--> 
+            <h6>CONOCE A LOS</h6>
+            <h2>ORADORES</h2>
+        </div>
+        <div> 
+            <div class="padreTarjetas">
+                <div class="tarjetasFlex">
+
+                    <div class="tarjeta">
+                        <img class="tarjetaImagen" src="./assets/imagenes/steve.jpg" alt="Steve Jobs mostrando Iphone" width="300" loading="lazy">
+                        <div class="tarjetaContenido">
+                            <h3><span class="amarilloNegro">JavaScript</span> <span class="celesteBlanco">React</span></h3>
+                            <h2 class="tituloOrador">Steve Jobs</h2>
+                            <div class="tarjetaParrafo">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem temporibus magnam consectetur vitae possimus est 
+                                    illo enim officia quos explicabo ut distinctio, laborum optio ducimus quo fuga doloremque vel suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta">
+                        <img class="tarjetaImagen" src="./assets/imagenes/bill.jpg" alt="Bill Gates de frente" width="300" loading="lazy">
+                        <div class="tarjetaContenido">
+                            <h3><span class="amarilloNegro">JavaScript</span> <span class="celesteBlanco">React</span></h3>
+                            <h2 class="tituloOrador">Bill Gates</h2>
+                            <div class="tarjetaParrafo">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem temporibus magnam consectetur vitae possimus est 
+                                    illo enim officia quos explicabo ut distinctio, laborum optio ducimus quo fuga doloremque vel suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tarjeta">
+                        <img class="tarjetaImagen" src="./assets/imagenes/ada.jpeg" alt="Ada Lovelace" width="300" loading="lazy">
+                        <div class="tarjetaContenido">
+                            <h3><span class="grisBlanco">Negocios</span> <span class="rojoBlanco">Startups</span></h3>
+                            <h2 class="tituloOrador">Ada Lovelace</h2>
+                            <div class="tarjetaParrafo">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem temporibus magnam consectetur vitae possimus est 
+                                    illo enim officia quos explicabo ut distinctio, laborum optio ducimus quo fuga doloremque vel suscipit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionDividida">
+        <div class="imagenIzq">
+            <!--<img src="./assets/imagenes/honolulu.jpg" alt="Costa de Bs As" width="1000" loading="lazy">-->
+        </div>
+        <div class="textoDerecho">
+            <h2>Bs As - Octubre</h2>
+            <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
+                Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu
+                se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado
+                una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km<sup>2</sup> de superficie).</p>
+            <a class="botonTransparente" href="">Conocé más</a>
+            <!-- <input class="botonTransparente" type="submit" value="Conocé más">-->
+        </div>
+    </section>
+
+    <section>
+        <div class="sectionForm">
+            <h6>CONVIÉRTETE EN UN</h6>
+            <h2>ORADOR</h2>
+            <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+            <form action="">
+                <div class="nomYape">
+                    <input class="datos" type="text" size="37" placeholder="Nombre">
+                    <input class="datos" type="text" size="37" placeholder="Apellido">
+                </div>
+                <div class="formaTexto">
+                    <textarea class="comentario" name="" id="" cols="80" rows="10" placeholder="Sobre qué quieres hablar?"></textarea>
+                    <p>Recuerda incluir un título para tu charla.</p>
+                </div>
+                <div class="positBoton">
+                    <input class="formaBoton" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="footer_flex">
+        <div class="pie">
+            <a class="link" href="">Preguntas frecuentes</a>
+            <a class="link" href="">Contáctanos</a>
+            <a class="link" href="">Prensa</a>
+            <a class="link" href="">Conferencias</a>
+            <a class="link" href="">Términos y condiciones</a>
+            <a class="link" href="">Privacidad</a>
+            <a class="link" href="">Estudiantes</a>
+        </div>
+      </footer>
+
+
+</body>
+</html>
