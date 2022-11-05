@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/imagenes/favicon.png">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+
+
+    <title>Construcción Proyecto Final Bs As</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark bgGris" aria-label="Third navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="alineaHeader">
+          <img class="img_logo" src="../assets/imagenes/codoacodo.png" alt="logo codo a codo" loading="lazy">
+          <h4 class="text-white">Conf Bs As</h4>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+             <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/los_oradores.html">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../paginas/lugar_y_fecha.html">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../paginas/conviertete_en_orador.html">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-success" href="./paginas/comprar_tickets.html">Comprar tickets</a>
+              </li>
+             </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="tarjetasBootCompra">
+    <div class="contenedorCard">
+      <div class="justCardCompra">
+        <div class="row row-cols-1 row-cols-md-3 g-4 col text-center">
+          <div class="col">
+            <div class="card h-100 border border-primary">
+              <div class="card-body">
+                <h5 class="card-title lh-lg font-weight-bold">Estudiante</h5>
+                <p class="lh-lg font-weight-normal">Tienen un descuento</p>
+                <h6 class="lh-lg font-weight-bold">80%</h6>
+                <p class="card-text lh-lg text-black-50">*presentar documentación</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border border-primary">
+              <div class="card-body">
+                <h5 class="card-title lh-lg font-weight-bold">Trainee</h5>
+                <p class="lh-lg font-weight-normal">Tienen un descuento</p>
+                <h6 class="lh-lg font-weight-bold">50%</h6>
+                <p class="card-text lh-lg text-black-50">*presentar documentación</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border border-warning">
+              <div class="card-body">
+                <h5 class="card-title lh-lg font-weight-bold">Junior</h5>
+                <p class="lh-lg font-weight-normal">Tienen un descuento</p>
+                <h6 class="lh-lg font-weight-bold">15%</h6>
+                <p class="card-text lh-lg text-black-50">*presentar documentación</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="alineaForm">
+      <div class="formPlantilla">
+        <div class="sectionForm">
+          <h6>VENTA</h6>
+          <h2>VALOR DEL TICKET $200</h2>
+        </div>
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <input type="text" id="nombre" required class="form-control"  placeholder="Nombre" aria-label="Nombre">
+            </div>
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <input type="text" id="apellido" required class="form-control"  placeholder="Apellido" aria-label="Apellido">
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+           <input type="email" id="mail" required class="form-control" placeholder="Correo" aria-label="Email"/>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <label for="cantTickets" class="col-lg-2 form-label">Cantidad</label>
+              <input type="number" id="cantTickets" class="form-control" placeholder="Cantidad" aria-label="Cantidad" min="1"/>
+            </div>
+          </div>
+          <div class="col">
+            <label for="categoriaSelect" class="col-lg-2 form-label">Categoria</label>
+            <select class="form-select" aria-label="Categoria" id="categoriaSelect">
+              <option value="" selected>-- Seleccione --</option>
+              <option value="0">Sin Categoria</option>
+              <option value="1">Estudiante</option>
+              <option value="2">Trainee</option>
+              <option value="3">Junior</option>
+            </select>
+          </div>
+     
+          <div class="alertPago">
+            <div class="alert alert-primary mt-2 mb-4"  role="alert">
+              Total a pagar: $ <span id="totalPago" class="align-middle"></span>
+            </div>
+          </div>
+        
+          <div class="btnForm gap-2">
+            <button type="reset" class="w-100 btn btn-lg btn-form btnEstilo text-white" id="btnBorrar">Borrar</button>
+            <button type="button" class="w-100 btn btn-lg btn-form btnEstilo text-white" id="btnResumen">Resumen</button>
+          </div>
+      </form>
+  </section>
+
+  <footer class="setFooter">
+    <div class="container">
+      <div class="row">
+        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Preguntas Frecuentes</a></div>
+        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Contactanós</a> </div>
+        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Prensa</a> </div>
+        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Conferencias</a> </div>
+        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Terminos Y condiciones</a> </div>
+        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Privacidad</a> </div>
+        <div class="col pt-3 pb-3"> <a class="text-white text-decoration-none" href="">Estudiantes</a> </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

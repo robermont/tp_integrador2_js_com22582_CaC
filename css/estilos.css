@@ -4,105 +4,58 @@
     box-sizing: border-box;
 }
 
-.header_flex {
-    background-color: rgb(53, 58, 64);
-    display: flex;
-    justify-content: center;
+.bgGris{
+    background-color: rgb(53, 58, 64); 
 }
 
-.logo{
+.alineaHeader{
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 50%;
-    padding-left: 2rem;
+    width:50%;
 }
 
 .img_logo{
-    width: 20%;
+    height:15%;
+    width: 15%;
 }
 
-.tituloHeader{
-    color: white;
-}
-
-.navegador{
-    padding-right: 2.5rem;
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.link{
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-}
-
-.link_gris{
-    color: rgb(155,156,160)
-}
-
-.link_verde{
-    color: rgb(43,129,66)
-}
-
-.sectionEdificio{
-    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../assets/imagenes/ba1.jpg");
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.contenidoEdificio{
-    width: 50%;
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #fff;
     text-align: right;
-    color: white;
-    padding-right: 2.5rem;
+    align-content: center;
 }
 
-.sectionTarjetas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.min-50{
+    position: absolute;
+    right: 0;
 }
-
-.tituloTarjetas{
+  
+.tituloCards{
     margin-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
 }
 
-.padreTarjetas{
-    width: 100%;
+.tarjetasBoot{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.tarjetasFlex{
-    width: 80%;
+.justCard{
+    width: 75%;
+}
+
+.contenedorCard{
+    padding-top: 1.5rem;
     display: flex;
-    justify-content: space-between;
-}
-
-.tarjeta{
-    background-color: white;
-    width: 30%;
-    border: 1px solid rgb(214,214,214);
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.tarjetaImagen{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.tarjetaContenido{
-    padding: 1rem;
+    justify-content: center;
 }
 
 .amarilloNegro{
@@ -133,41 +86,13 @@
     padding: 0.2rem;    
 }
 
-.tituloOrador{
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.tarjetaParrafo{
-    width: 80%;
-}
-
-.sectionDividida{
-    display: flex;
-    height: 70vh;
-}
-
-.imagenIzq{
-    height: 100%;
-    width: 50%;
-    background-image: url("../assets/imagenes/honolulu.jpg");
-    background-size: cover;
+.cardHorizontal {
+    padding-top: 1.5rem;
 }
 
 .textoDerecho{
-    height: 100%;
-    width: 50%;
-    padding: 2rem;
     background-color: #343333;
-    color: white;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.alineaBoton{
-    margin-top: 1.5rem;
+    font-size: 0.8rem;
 }
 
 .botonTransparente{
@@ -176,17 +101,7 @@
     border: 1px solid white;
     border-radius: 5px;
     color: white;
-    padding: 0.5rem;
-    text-decoration: none;
-}
-
-.botonVerde{
-    margin-top: 1rem;
-    background-color: rgb(41,167,68);
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-    padding: 0.5rem;
+    padding: 0.3rem;
     text-decoration: none;
 }
 
@@ -197,219 +112,68 @@
     align-items: center;
 }
 
-.nomYape{
-    margin-top: 0.5rem;
+.alineaForm{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-}
-
-.formaTexto{
-    font-size: 0.7rem;
-}
-
-.formaBoton{
-    width: 100%;
-    margin-top: 1rem;
-    background-color: rgb(150,201,62);
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-    padding: 0.5rem;
-    text-decoration: none;
-    margin-bottom: 0.7rem;
-}
-
-.footer_flex{
-    background-color: rgb(30,81,112);
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    height: 10vh;
 }
 
-.pie{
-    width: 80%;
+.alineaTextA{
+    margin-top: 1.5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;   
 }
 
-/* *** MOBILE *** */
-
-/*celular*/
-@media screen and (max-width:768px){
-    .header_flex{
-        flex-direction: column;
-    }
-    
-    .logo{
-        width: 100%;
-        justify-content: space-between;
-        padding-right: 2rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .navegador{
-        width: 100%;
-        flex-direction: column;
-        padding-right: initial;
-    }
-
-    .link{
-        border-bottom: 1px solid rgb(20, 20, 20);
-        border-top: 1px solid rgb(20, 20, 20);
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        padding-top: 0.6rem;
-        padding-bottom: 0.6rem;
-        font-size: 1.2rem;
-    }
-
-    .sectionEdificio{
-        display: flex;
-        width: 100%;
-        height: 100vh;
-        justify-content: center;
-    }
-
-    .contenidoEdificio{
-        width: 100%;
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-        text-align: center;
-    }
-
-    .alineaBoton{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 0.5rem;
-    }
-
-    .tituloTarjetas{
-        margin-bottom: 1rem;
-    }
-
-    .tarjetasFlex{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tarjeta{
-        width: 90%;
-        margin-bottom: 1rem;
-        box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-                            -webkit-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-                            -moz-box-shadow: -7px -7px 50px 6px rgba(0,0,0,0.54);
-        
-    }
-
-    .tarjetaParrafo{
-        font-size: 1.3rem;
-    }
-
-    .sectionDividida{
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        align-items: center;
-    }
-
-    .imagenIzq{
-        height: 100%;
-        width: 100%;
-        background-image: url("../assets/imagenes/honolulu.jpg");
-        background-size: cover;
-    }
-
-    .textoDerecho{
-        width: 100%;
-        font-size: 1.2rem;
-        line-height: 1.3rem;
-        height: 80vh;
-     
-    }
-
-    .botonTransparente{
-        margin-top: 1rem;
-        background-color: transparent;
-        border: 1px solid white;
-        border-radius: 5px;
-        color: white;
-        padding: 0.5rem;
-        text-decoration: none;
-        align-items: center;
+.btnForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-    .sectionForm{
-        display: flex;
-        align-items: center;
-        line-height: 1.5rem;
+.btnEstilo{
+    border: none;
+    background-color: rgb(150,201,62);
+}
 
-    }
+.setFooter{
+    margin-top: 1.5rem;
+    background-color: rgb(30,81,112);
+}
 
-    .formaTexto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+.cards {
+    padding-top: 1.5rem;
+}
 
-    .nomYape{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
+.tituloForm{
+    padding-top: 1.5rem;
+    text-align: center;
+}
 
-    .datos{
-        margin-bottom: 0.7rem;
-        width: 30%;
-        
-    }
+.contenedorForm{
+    background-color: red;
+    width: 100%;
+}
 
-    .comentario{
-        display: flex;
-        align-items: center;
-        width: 80%;
-        
-    }
+.contenedorFlexF{
+    padding-top: 1rem;
+    display: flex;
+}
 
-    .positBoton{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 15vh;
-    }
+.formPlantilla{
+    width: 53%;
+}
 
-    .formaBoton{
-        width: 40%;
-        margin-bottom: 2rem;
-    }
+.noResize{
+    resize: none;
+    vertical-align: middle;
+}
 
-    .footer_flex{
-        margin-top: 6rem;
-        flex-direction: column;
-        
-    }
+.btnForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-    .pie{
-        width: 100%;
-        flex-direction: column;
-        /*padding-right: initial;*/
-        background-color: rgb(30,81,112);
-    }
-
-    .link{
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        padding-top: 0.6rem;
-        padding-bottom: 0.6rem;
-        font-size: 1.2rem;
-        
-    }
-
+.alertPago{
+    width: 100%;
 }
